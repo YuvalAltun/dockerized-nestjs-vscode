@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  nest-api-debug:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.debug
+    environment:
+      NODE_ENV: development
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+      - 9229:9229
+    # depends_on: 
+    #   - <name of a service>
