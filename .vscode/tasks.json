@@ -1,6 +1,12 @@
 {
 	"version": "2.0.0",
 	"tasks": [
+		{
+			"label": "debug-docker",
+			"command": "npm run docker:debug", // Could be any other shell command
+			// "args": ["test"],
+			"type": "shell"
+		},
 		// {
 		// 	"type": "docker-build",
 		// 	"label": "docker-build",

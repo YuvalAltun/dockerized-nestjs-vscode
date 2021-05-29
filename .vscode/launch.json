@@ -7,6 +7,7 @@
               "remoteRoot": "/app",
               "localRoot": "${workspaceFolder}",
               "protocol": "inspector",
+            //   "preLaunchTask": "debug-docker",
               "port": 9229,
               "restart": true,
               "address": "0.0.0.0",
